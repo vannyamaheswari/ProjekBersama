@@ -76,8 +76,7 @@ title('Gambar Uji')
 subplot(122)
 imshow(reshape(uint8(X(idmin,:)),size(ImageUji,1),size(ImageUji,2)))
 if class(idmin)=='h'
-    %title('Gambar dari Data Pelatihan')
-    title('Vannya elek')
+    title('Gambar dari Data Pelatihan')
 else
-    title('mantab')
+    title('Gambar dari Data Pelatihan mantab')
 end
