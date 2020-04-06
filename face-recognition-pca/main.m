@@ -57,7 +57,7 @@ Omega = (X-repmat(Psi,size(X,1),1))*U;
 
 %% Proyeksi Gambar Uji dan Vektor Uji
 folder2 = 'DataUji';
-namafileuji = ['./' folder2 '/' 'k' '/' 'k16' ext];
+namafileuji = ['./' folder2 '/' 'a' '/' 'a16' ext];
 ImageUji = imread(namafileuji);
 Xuji = reshape(double(ImageUji),1,prod(size(ImageUji)));
 Omega_k = (Xuji-Psi)*U;
@@ -75,7 +75,7 @@ imshow(ImageUji)
 title('Gambar Uji')
 subplot(122)
 imshow(reshape(uint8(X(idmin,:)),size(ImageUji,1),size(ImageUji,2)))
-if class(idmin)=='h'
+if class(idmin)=='a'
     %title('Gambar dari Data Pelatihan')
     title('bangke')
 else
