@@ -77,7 +77,7 @@ subplot(122)
 imshow(reshape(uint8(X(idmin,:)),size(ImageUji,1),size(ImageUji,2)))
 
 if class(idmin)=='a'
-    title('Vannya sekseh')
+    title({'Vannya', 'sekseh'})
 end
 if class(idmin)=='b'
     title('natan ganteng')
