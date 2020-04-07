@@ -57,7 +57,7 @@ Omega = (X-repmat(Psi,size(X,1),1))*U;
 
 %% Proyeksi Gambar Uji dan Vektor Uji
 folder2 = 'DataUji';
-namafileuji = ['./' folder2 '/' 'n' '/' 'n20' ext];
+namafileuji = ['./' folder2 '/' 'a' '/' 'a17' ext];
 ImageUji = imread(namafileuji);
 Xuji = reshape(double(ImageUji),1,prod(size(ImageUji)));
 Omega_k = (Xuji-Psi)*U;
