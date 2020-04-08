@@ -2,7 +2,7 @@ close all
 clear
 clc
 
-namafile = 'abcdefghijklmn';
+namafile = 'abcdefghijklmnopqrs';
 n_pelatihan = 1:15;
 n_pengujian = 16:20;
 ext = '.tiff';
