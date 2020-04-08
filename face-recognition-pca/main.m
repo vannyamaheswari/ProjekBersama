@@ -4,7 +4,7 @@ clc
 
 %% STEP 1 dan 2 (Membuat Database Matrik Pelatihan)
 folder1 = 'DataPelatihan';
-namafolder = 'abcdefghijklmnopqrs';
+namafolder = 'abcdefghijklmnopqrst';
 ext = '.tiff';
 n_file = 1:15;
 count = 0;
@@ -57,7 +57,7 @@ Omega = (X-repmat(Psi,size(X,1),1))*U;
 
 %% Proyeksi Gambar Uji dan Vektor Uji
 folder2 = 'DataUji';
-namafileuji = ['./' folder2 '/' 's' '/' 's20' ext];
+namafileuji = ['./' folder2 '/' 't' '/' 't20' ext];
 ImageUji = imread(namafileuji);
 Xuji = reshape(double(ImageUji),1,prod(size(ImageUji)));
 Omega_k = (Xuji-Psi)*U;
@@ -133,4 +133,7 @@ if class(idmin)=='r'
 end
 if class(idmin)=='s'
     title({'Gambar Data Pelatihan :', 'Jang Hansol'})
+end
+if class(idmin)=='t'
+    title({'Gambar Data Pelatihan :', 'Ronal Venas'})
 end
