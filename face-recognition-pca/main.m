@@ -4,7 +4,7 @@ clc
 
 %% STEP 1 dan 2 (Membuat Database Matrik Pelatihan)
 folder1 = 'DataPelatihan';
-namafolder = 'abcdefghijklmn';
+namafolder = 'abcdefghijklmnopqrs';
 ext = '.tiff';
 n_file = 1:15;
 count = 0;
