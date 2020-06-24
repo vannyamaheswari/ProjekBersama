@@ -57,7 +57,7 @@ Omega = (X-repmat(Psi,size(X,1),1))*U;
 
 %% Proyeksi Gambar Uji dan Vektor Uji
 folder2 = 'DataUji';
-namafileuji = ['./' folder2 '/' 't' '/' 't20' ext];
+namafileuji = ['./' folder2 '/' 'b' '/' 'b20' ext];
 ImageUji = imread(namafileuji);
 Xuji = reshape(double(ImageUji),1,prod(size(ImageUji)));
 Omega_k = (Xuji-Psi)*U;
@@ -72,68 +72,68 @@ disp(['Gambar uji termasuk gambar pelatihan golongan ' class(idmin)])
 figure
 subplot(121)
 imshow(ImageUji)
-title('Gambar Uji')
+title('Test Image')
 subplot(122)
 imshow(reshape(uint8(X(idmin,:)),size(ImageUji,1),size(ImageUji,2)))
 
 %%Nama-nama :
 if class(idmin)=='a'
-    title({'Gambar Data Pelatihan :', 'Vannya Maheswari'})
+    title({'Training Data Image :', 'Vannya Maheswari'})
 end
 if class(idmin)=='b'
-    title({'Gambar Data Pelatihan :', 'Jonathan Purnama Halim'})
+    title({'Training Data Image :', 'Jonathan Purnama Halim'})
 end
 if class(idmin)=='c'
-    title({'Gambar Data Pelatihan :','Ivan William'})
+    title({'Training Data Image :','Ivan William'})
 end
 if class(idmin)=='d'
-    title({'Gambar Data Pelatihan :', 'Kho Sendy Ardianto'})
+    title({'Training Data Image :', 'Kho Sendy Ardianto'})
 end
 if class(idmin)=='e'
-    title({'Gambar Data Pelatihan :', 'Hendrawan Raharjo'})
+    title({'Training Data Image :', 'Hendrawan Raharjo'})
 end
 if class(idmin)=='f'
-    title({'Gambar Data Pelatihan :', 'Nita Vania'})
+    title({'Training Data Image :', 'Nita Vania'})
 end
 if class(idmin)=='g'
-    title({'Gambar Data Pelatihan :' ,'Jonathan Sulistio Jusuf'})
+    title({'Training Data Image :' ,'Jonathan Sulistio Jusuf'})
 end
 if class(idmin)=='h'
-    title({'Gambar Data Pelatihan :', 'Daniel Ekanata'})
+    title({'Training Data Image :', 'Daniel Ekanata'})
 end
 if class(idmin)=='i'
-    title({'Gambar Data Pelatihan :', 'Rodolf Valentino'})
+    title({'Training Data Image :', 'Rodolf Valentino'})
 end
 if class(idmin)=='j'
-    title({'Gambar Data Pelatihan :', 'Wong Feren'})
+    title({'Training Data Image :', 'Wong Feren'})
 end
 if class(idmin)=='k'
-    title({'Gambar Data Pelatihan :', 'Lily Gunawan'})
+    title({'Training Data Image :', 'Lily Gunawan'})
 end
 if class(idmin)=='l'
-    title({'Gambar Data Pelatihan :', 'Felix'})
+    title({'Training Data Image :', 'Felix'})
 end
 if class(idmin)=='m'
-    title({'Gambar Data Pelatihan :', 'Velincia Sepvilita'})
+    title({'Training Data Image :', 'Velincia Sepvilita'})
 end
 if class(idmin)=='n'
-    title({'Gambar Data Pelatihan :', 'Laksita Maulisa Liztio'})
+    title({'Training Data Image :', 'Laksita Maulisa Liztio'})
 end
 if class(idmin)=='o'
-    title({'Gambar Data Pelatihan :', 'Selly Oktaviani'})
+    title({'Training Data Image :', 'Selly Oktaviani'})
 end
 if class(idmin)=='p'
-    title({'Gambar Data Pelatihan :', 'Ari Hilda Mawaddah'})
+    title({'Training Data Image :', 'Ari Hilda Mawaddah'})
 end
 if class(idmin)=='q'
-    title({'Gambar Data Pelatihan :', 'Aghitsna Sabila'})
+    title({'Training Data Image :', 'Aghitsna Sabila'})
 end
 if class(idmin)=='r'
-    title({'Gambar Data Pelatihan :', 'Daffa Fajri Riesaputri'})
+    title({'Training Data Image :', 'Daffa Fajri Riesaputri'})
 end
 if class(idmin)=='s'
-    title({'Gambar Data Pelatihan :', 'Jang Hansol'})
+    title({'Training Data Image :', 'Jang Hansol'})
 end
 if class(idmin)=='t'
-    title({'Gambar Data Pelatihan :', 'Ronal Venas'})
+    title({'Training Data Image :', 'Ronal Venas'})
 end
